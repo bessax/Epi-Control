@@ -1,0 +1,168 @@
+body
+{
+ font-family: helv,Arial,Verdana,sans-serif;
+ font-size: 70%;
+ color:#1E1903;
+ margin: 0;
+ padding: 0;
+
+}
+#footer
+{
+    position: relative;
+    text-align: center;
+     
+}
+#content
+{
+ position: relative;
+ width:761px;
+ margin:0 auto;
+ padding: 0; 
+}
+
+
+#content form
+{
+ margin-left: 30px;
+ margin-right: 30px;   
+}
+
+fieldset
+{
+  margin: 10px 0 0 0;
+  padding: 0;
+  background:transparent url(images/fundo_conteudo.png) repeat bottom right;    
+}
+
+legend{
+    
+    text-transform: uppercase;
+    font-size: 1.3em;
+    padding: 5px;
+    margin-left: 1em;
+    color: #ffffff;
+    background: #493f0b;
+    
+}
+fieldset ol
+{
+    
+    padding: 10px 10px 0 10px;
+    list-style: none;
+}
+
+fieldset li
+{
+    
+    position: relative;
+    padding-bottom: 1em;
+    line-height: 3.4em;
+}
+
+.required
+{
+    background: transparent;
+    
+}
+
+label
+{
+    
+    position: relative;
+    clear: left;
+    float: left;
+    width: 15em;
+    margin-right: 5px;
+    padding-right: 30px;
+    line-height: 3.4em;
+    text-align: right;
+    
+}
+
+input
+{
+    
+    padding-left: 5px;
+    font-size: 1.5em;
+    border: 1px solid #493f0b;
+    color: #1E1903;
+    background: #f5f6d4;
+}
+
+
+/*Configurações Padrões*/
+ul.menu, .menu li, .menu a{ margin:0; padding:0; list-style:none; text-decoration:none;}
+ul.menu ul{ position:absolute; display:none; box-shadow:3px 3px 2px #333;}
+
+/* Configurações nivel 1*/
+ul.menu{ float:left; font-family:Verdana, Geneva, sans-serif; font-size:15px; border-radius:5px; padding:0 5px;}
+.menu li{ float:left; width:auto; position:relative;}
+.menu li a{ display:block; padding:0 20px; line-height:45px; height:45px; float:left; transition:all 0.1s linear; }
+
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-1{ display:block; top:45px; left:0; padding:5px; width:200px; border-radius:0 0 5px 5px;   }
+.menu ul.submenu-1 a{  width:160px; padding:0 20px; border-radius:5px;  }
+
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-2{ display:block; top:0; left:195px; padding:5px; width:200px;  border-radius: 0 5px 5px 5px; }
+.menu ul.submenu-2 a{  width:160px; padding:0 20px; border-radius:5px; }
+
+/* Configurações nivel 3*/
+.menu li:hover > ul.submenu-3{ display:block; top:0; left:195px; padding:5px; width:200px;  border-radius: 0 5px 5px 5px; }
+.menu ul.submenu-3 a{  width:160px; padding:0 20px; border-radius:5px; }
+
+
+/*Configurações de cores*/
+
+/*nivel 1*/
+.menu{background:#CCC; }
+.menu a{ color:#000;}
+.menu li:hover > a{ background:#999;  color:#fff;}
+
+/*nivel 2*/
+.submenu-1{ background:#999;}
+.submenu-1 a{color:#fff;}
+.submenu-1 li:hover > a{ background:#666; }
+
+/*nivel 3*/
+.submenu-2{ background:#666;}
+.submenu-2 a{color:#fff;}
+.submenu-2 li:hover > a{ background:#333; }
+
+/*nivel 3*/
+.submenu-3{ background:#333;}
+.submenu-3 a{color:#fff;}
+.submenu-3 li:hover > a{ background:#000; }
+
+
+/*Janela modal*/
+#mask {position:absolute;
+z-index:9000; 
+background-color:#000;
+display:none;
+}
+
+#boxes .window {
+position:absolute;
+width:440px;
+height:200px;
+display:none;
+z-index:9999;
+padding:20px;
+}
+
+/* Personalize a janela modal aqui. Você pode adicionar uma imagem de fundo. */
+
+#boxes #dialog {
+width:375px;
+height:203px;
+}
+
+/* posiciona o link para fechar a janela */
+
+.close {
+display:block;
+text-align:right;
+} 
+

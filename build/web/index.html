@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sistema de Controle de EPI WEB</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="estilos/estilos.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body>
+        <div id="content"><h1>&nbsp;&nbsp;&nbsp;&nbsp;Controle de EPI - Equipamento de Proteção Individual</h1></div>
+        <br>
+        <div id="content">
+            <form action="LoginServlet" method="post">                
+               <fieldset id="login">
+               <legend><span>Informe Dados de Acesso</span></legend>
+                    <ol>
+                         <li>
+                             <label for="login" title="Seu Login"> Login<span>*</span></label><input type="text" name="name">
+                         </li>
+                         <li>
+                            <label for="password" title="Sua Senha">Password<span>*</span></label><input type="password" name="password">
+                         </li>                         
+                     </ol>
+               </fieldset>                               
+                <fieldset >
+                    <input type="submit" value="Enviar">                   
+                </fieldset>
+                
+            </form>             
+        </div> 
+        <div id="footer" >            
+            <span> &copy Aluno: André Bessa da Silva - Pós Graduação em Engenharia de Software (Estácio de Sá)<br> 
+            Disciplina:Projeto e Implementação Orientada a Objetos.
+            </span>
+        </div>
+    </body>
+</html>
